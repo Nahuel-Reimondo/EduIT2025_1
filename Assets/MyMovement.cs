@@ -10,10 +10,10 @@ public class MyMovement : MonoBehaviour
     {
         //this.transform.Translate(transform.forward * speed * Time.deltaTime);
         //this.transform.Translate(transform.right * speed * Time.deltaTime, Space.Self);
-        this.transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
+        //this.transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
         
-        // Vector3 newPos = this.transform.position;
-        // newPos += Vector3.forward * speed * Time.deltaTime;
-        // this.transform.position = newPos;
+        Vector3 newPos = this.transform.position;
+        newPos += Vector3.forward * speed * Time.deltaTime;
+        this.transform.position = newPos;
     }
 }
