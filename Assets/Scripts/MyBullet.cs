@@ -17,10 +17,7 @@ public class MyBullet : MonoBehaviour
         Invoke( nameof(DestroyBullet), lifeTime);
     }
 
-    private void DestroyBullet()
-    {
-        Destroy(gameObject);
-    }
+    
 
     private void OnDisable()
     {
@@ -32,6 +29,12 @@ public class MyBullet : MonoBehaviour
         CancelInvoke(nameof(DestroyBullet));
     }
 
+    private void DestroyBullet()
+    {
+        //CancelInvoke();
+        Destroy(gameObject);
+    }
+    
     void Update()
     {
         this.transform.Translate(Vector3.forward * speed * Time.deltaTime);
@@ -46,5 +49,10 @@ public class MyBullet : MonoBehaviour
     public void SeeBullet()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        DestroyBullet();
     }
 }

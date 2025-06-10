@@ -60,4 +60,13 @@ public class MyScript : MonoBehaviour
     {
         
     }
+
+    private Enemy enemyPrefab;
+    private void CreateEnemy()
+    {
+        Enemy enemy = Instantiate(enemyPrefab);
+        enemy.onDeath += UIManagerSingleton.instance.UpdateKills;
+        //enemy.onDeath.Invoke();
+    }
+
 }

@@ -8,7 +8,6 @@ using TMPro;
 public class MyPlayer : MonoBehaviour
 {
     //[SerializeField] private Image myImage;
-    [SerializeField] private TextMeshProUGUI myText;
     [SerializeField] private float speed = 10f;
     [Space]
     [SerializeField] private GameObject bulletOriginal;
@@ -28,13 +27,7 @@ public class MyPlayer : MonoBehaviour
     {
         MovePlayer();
         Shoot();
-        
-        UpdateUI();
-    }
-
-    private void UpdateUI()
-    {
-        myText.text = "Bullets Fired: " + shotsFired.ToString() +".";
+       
     }
 
     private void MovePlayer()
