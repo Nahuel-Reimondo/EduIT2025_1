@@ -4,6 +4,7 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class MyPlayer : MonoBehaviour
 {
@@ -13,6 +14,16 @@ public class MyPlayer : MonoBehaviour
     [SerializeField] private GameObject bulletOriginal;
     [SerializeField] private Transform bulletSpawn;
     [SerializeField] private MyBullet lastBullet;
+    
+    [Space]
+    [SerializeField] private ParticleSystem particle;
+    
+    [Space]
+    [SerializeField] private AudioSource audioSource;
+
+    [FormerlySerializedAs("audioClip")] [SerializeField] private AudioClip[] audioClips;
+    
+
     
     private int shotsFired = 0;
     
@@ -67,6 +78,7 @@ public class MyPlayer : MonoBehaviour
         Vector3 myPos = transform.position;
         myPos += move.normalized * speed * Time.deltaTime;
         transform.position = myPos;
+        
     }
 
     private void Shoot()
@@ -85,6 +97,12 @@ public class MyPlayer : MonoBehaviour
             
             shotsFired++;
             //shotsFired += 1;
+            
+            particle.Play();
+            
+            audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
+            audioSource.Play();
+            
         }
     }
 }
