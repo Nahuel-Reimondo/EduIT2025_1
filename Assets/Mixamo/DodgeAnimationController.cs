@@ -27,7 +27,7 @@ public class DodgeAnimationController : MonoBehaviour
             animator.SetTrigger(dodgeParam);
             lastDodgeTime = Time.time;
             
-            animator.CrossFade();
+            //animator.CrossFade();
         }
 
     }
