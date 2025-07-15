@@ -856,9 +856,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000000121071935
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.044378467
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00000026542693
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9937584
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.103903905
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.022974873
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0334748
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -11.828
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.082
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.178
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
       propertyPath: m_Name
       value: passive_marker_man@Dodging Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: 10eeb84377ba83043b8e9a087d82cf1a, type: 3}
+      propertyPath: m_Name
+      value: mixamorig:Hips
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
