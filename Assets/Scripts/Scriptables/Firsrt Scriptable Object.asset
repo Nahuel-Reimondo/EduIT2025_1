@@ -13,15 +13,7 @@ MonoBehaviour:
   m_Name: Firsrt Scriptable Object
   m_EditorClassIdentifier: 
   value: 5
-  values:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  prefabs: {fileID: 3146705093901032357, guid: e0b2491dfd0bb9d4c9007eb87e252f4b, type: 3}
+  floats:
+  - 50
+  - 21.215
+  prefab: {fileID: 0}

@@ -6,12 +6,24 @@ using UnityEngine;
 public class MyScriptableObject : ScriptableObject
 {
     public float value;
-    public List<float> values = new List<float>();
-    public GameObject prefabs;
+    public List<float> floats = new List<float>();
+    public List<InfoClass> values = new List<InfoClass>();
+    public GameObject prefab;
 
-
-    public void SpawnObject(Vector3 position)
+    public GameObject SpawnObject(Vector3 position)
     {
-        
+        return prefab;
+    }
+}
+
+[System.Serializable]
+public class InfoClass
+{
+    public string name;
+    public string description;
+    public float value;
+    
+    public void SuperMethod()
+    {
     }
 }
